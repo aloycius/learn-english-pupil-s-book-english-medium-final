@@ -1,0 +1,329 @@
+/* Teacher correction pass (28 Aug): speech pointers and PDF-faithful overlays. */
+
+/* Speech-bubble containers */
+:is(
+  p:has(> [data-id="pg022_n0005"]),
+  p:has(> [data-id="pg022_n0009"]),
+  p:has(> [data-id="pg022_n0014"]),
+  p:has(> [data-id="pg022_n0020"]),
+  div:has(> div > [data-id="pg023_n0003"]),
+  div:has(> div > [data-id="pg023_n0008"]),
+  div:has(> [data-id="pg024_n0007"]),
+  div:has(> [data-id="pg024_n0011"]),
+  div:has(> [data-id="pg024_n0015"]),
+  div:has(> [data-id="pg024_n0018"]),
+  div:has(> p[data-id="pg029_n0004"]),
+  div:has(> p[data-id="pg029_n0005"]),
+  div:has(> p[data-id="pg029_n0006"]),
+  div:has(> p[data-id="pg029_n0007"]),
+  div:has(> p[data-id="pg029_n0009"]),
+  div:has(> p[data-id="pg029_n0010"]),
+  div:has(> p[data-id="pg029_n0011"]),
+  div:has(> p[data-id="pg029_n0012"]),
+  div:has(> p[data-id="pg029_n0013"]),
+  div:has(> p[data-id="pg029_n0014"]),
+  div:has(> p > [data-id="pg030_n0004"]),
+  div:has(> p > [data-id="pg030_n0005"]),
+  div:has(> p > [data-id="pg030_n0006"]),
+  div:has(> p > [data-id="pg030_n0008"]),
+  div:has(> p > [data-id="pg030_n0009"]),
+  div:has(> p > [data-id="pg030_n0010"]),
+  [data-id="pg033_n0005"],
+  div:has(> [data-id="pg033_n0006"]),
+  [data-id="pg033_n0008"],
+  div:has(> [data-id="pg033_n0013"]),
+  div:has(> [data-id="pg033_n0015"]),
+  div:has(> [data-id="pg035_n0009"]),
+  div:has(> [data-id="pg035_n0010"])
+) {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+:is(
+  p:has(> [data-id="pg022_n0005"]),
+  [data-id="pg033_n0005"]
+)::before,
+:is(
+  p:has(> [data-id="pg022_n0005"]),
+  [data-id="pg033_n0005"]
+)::after,
+:is(
+  p:has(> [data-id="pg022_n0009"]),
+  [data-id="pg033_n0008"],
+  div:has(> [data-id="pg033_n0015"])
+)::before,
+:is(
+  p:has(> [data-id="pg022_n0009"]),
+  [data-id="pg033_n0008"],
+  div:has(> [data-id="pg033_n0015"])
+)::after,
+:is(
+  p:has(> [data-id="pg022_n0014"]),
+  p:has(> [data-id="pg022_n0020"]),
+  div:has(> div > [data-id="pg023_n0003"]),
+  div:has(> div > [data-id="pg023_n0008"]),
+  div:has(> p[data-id^="pg029_"]),
+  div:has(> p > [data-id^="pg030_"]),
+  div:has(> [data-id="pg035_n0009"]),
+  div:has(> [data-id="pg035_n0010"])
+)::before,
+:is(
+  p:has(> [data-id="pg022_n0014"]),
+  p:has(> [data-id="pg022_n0020"]),
+  div:has(> div > [data-id="pg023_n0003"]),
+  div:has(> div > [data-id="pg023_n0008"]),
+  div:has(> p[data-id^="pg029_"]),
+  div:has(> p > [data-id^="pg030_"]),
+  div:has(> [data-id="pg035_n0009"]),
+  div:has(> [data-id="pg035_n0010"])
+)::after,
+:is(
+  div:has(> [data-id^="pg024_"]),
+  div:has(> [data-id="pg033_n0006"]),
+  div:has(> [data-id="pg033_n0013"])
+)::before,
+:is(
+  div:has(> [data-id^="pg024_"]),
+  div:has(> [data-id="pg033_n0006"]),
+  div:has(> [data-id="pg033_n0013"])
+)::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Point left toward a speaker. */
+:is(
+  p:has(> [data-id="pg022_n0005"]),
+  [data-id="pg033_n0005"]
+)::before {
+  left: -21px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 21px solid #f87171;
+}
+
+:is(
+  p:has(> [data-id="pg022_n0005"]),
+  [data-id="pg033_n0005"]
+)::after {
+  left: -17px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 18px solid white;
+}
+
+/* Point right toward a speaker. */
+:is(
+  p:has(> [data-id="pg022_n0009"]),
+  [data-id="pg033_n0008"],
+  div:has(> [data-id="pg033_n0015"])
+)::before {
+  right: -21px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 21px solid #f87171;
+}
+
+:is(
+  p:has(> [data-id="pg022_n0009"]),
+  [data-id="pg033_n0008"],
+  div:has(> [data-id="pg033_n0015"])
+)::after {
+  right: -17px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 18px solid white;
+}
+
+/* Bubbles placed below an illustration point upward. */
+:is(
+  p:has(> [data-id="pg022_n0014"]),
+  p:has(> [data-id="pg022_n0020"]),
+  div:has(> div > [data-id="pg023_n0003"]),
+  div:has(> div > [data-id="pg023_n0008"]),
+  div:has(> p[data-id^="pg029_"]),
+  div:has(> p > [data-id^="pg030_"]),
+  div:has(> [data-id="pg035_n0009"]),
+  div:has(> [data-id="pg035_n0010"])
+)::before {
+  left: 50%;
+  top: -21px;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 21px solid #f87171;
+}
+
+:is(
+  p:has(> [data-id="pg022_n0014"]),
+  p:has(> [data-id="pg022_n0020"]),
+  div:has(> div > [data-id="pg023_n0003"]),
+  div:has(> div > [data-id="pg023_n0008"]),
+  div:has(> p[data-id^="pg029_"]),
+  div:has(> p > [data-id^="pg030_"]),
+  div:has(> [data-id="pg035_n0009"]),
+  div:has(> [data-id="pg035_n0010"])
+)::after {
+  left: 50%;
+  top: -17px;
+  transform: translateX(-50%);
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 18px solid white;
+}
+
+/* Bubbles placed above an illustration point downward. */
+:is(
+  div:has(> [data-id^="pg024_"]),
+  div:has(> [data-id="pg033_n0006"]),
+  div:has(> [data-id="pg033_n0013"])
+)::before {
+  left: 50%;
+  bottom: -21px;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 21px solid #f87171;
+}
+
+:is(
+  div:has(> [data-id^="pg024_"]),
+  div:has(> [data-id="pg033_n0006"]),
+  div:has(> [data-id="pg033_n0013"])
+)::after {
+  left: 50%;
+  bottom: -17px;
+  transform: translateX(-50%);
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 18px solid white;
+}
+
+/* Page 62: put each selectable word directly on its tomato. */
+[data-section-id="pg062_sec001"] div:has(> .grid [data-id="pg062_n0005"]) {
+  position: absolute !important;
+  inset: 0 !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+[data-section-id="pg062_sec001"] .grid:has([data-id="pg062_n0005"]) {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+}
+
+[data-section-id="pg062_sec001"] label:has([data-id^="pg062_n00"]) {
+  position: absolute !important;
+  transform: translate(-50%, -50%);
+  gap: 0 !important;
+  margin: 0 !important;
+  color: white;
+}
+
+[data-section-id="pg062_sec001"] label:has([data-id^="pg062_n00"]) > div:first-child {
+  display: none !important;
+}
+
+[data-section-id="pg062_sec001"] label:has([data-id^="pg062_n00"]) > span {
+  color: white !important;
+  font-size: clamp(0.78rem, 2vw, 1.22rem) !important;
+  line-height: 1 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+[data-section-id="pg062_sec001"] label:has([data-id="pg062_n0005"]) { left: 49%; top: 58%; }
+[data-section-id="pg062_sec001"] label:has([data-id="pg062_n0006"]) { left: 68%; top: 52%; }
+[data-section-id="pg062_sec001"] label:has([data-id="pg062_n0007"]) { left: 80%; top: 54%; }
+[data-section-id="pg062_sec001"] label:has([data-id="pg062_n0008"]) { left: 39%; top: 77%; }
+[data-section-id="pg062_sec001"] label:has([data-id="pg062_n0009"]) { left: 80%; top: 67%; }
+[data-section-id="pg062_sec001"] label:has([data-id="pg062_n0010"]) { left: 60%; top: 66%; }
+[data-section-id="pg062_sec001"] label:has([data-id="pg062_n0011"]) { left: 69%; top: 79%; }
+[data-section-id="pg062_sec001"] label:has([data-id="pg062_n0012"]) { left: 50%; top: 80%; }
+[data-section-id="pg062_sec001"] label:has([data-id="pg062_n0013"]) { left: 91%; top: 78%; }
+
+/* Page 33: point each bubble toward the person speaking. */
+[data-id="pg033_n0005"]::before {
+  left: auto !important;
+  right: -21px !important;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  border: 0 !important;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 21px solid #f87171 !important;
+}
+
+[data-id="pg033_n0005"]::after {
+  left: auto !important;
+  right: -17px !important;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  border: 0 !important;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 18px solid white !important;
+}
+
+[data-id="pg033_n0008"]::before {
+  left: -21px !important;
+  right: auto !important;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  border: 0 !important;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 21px solid #f87171 !important;
+}
+
+[data-id="pg033_n0008"]::after {
+  left: -17px !important;
+  right: auto !important;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  border: 0 !important;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 18px solid white !important;
+}
+
+div:has(> [data-id="pg033_n0015"])::before {
+  left: 50%;
+  right: auto;
+  top: -21px;
+  bottom: auto;
+  transform: translateX(-50%);
+  border: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 21px solid #f87171;
+}
+
+div:has(> [data-id="pg033_n0015"])::after {
+  left: 50%;
+  right: auto;
+  top: -17px;
+  bottom: auto;
+  transform: translateX(-50%);
+  border: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 18px solid white;
+}
