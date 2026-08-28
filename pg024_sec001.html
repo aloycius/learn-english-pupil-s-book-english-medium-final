@@ -16,7 +16,9 @@
     <main class="w-full">
       <div id="content" class="opacity-0">
         <style>
-  .p24-page { position: relative; width: 100%; aspect-ratio: 1404 / 1734; overflow: hidden; background: #fff; color: #202020; container-type: inline-size; font-family: "Comic Sans MS", "Comic Sans", cursive; }
+  @font-face { font-family: "Sassoon Primary"; src: url("assets/fonts/SassoonPrimary.ttf") format("truetype"); font-weight: 400 700; font-style: normal italic; font-display: swap; }
+  .p24-page { position: relative; width: 100%; aspect-ratio: 1404 / 1734; overflow: hidden; background: #fff; color: #202020; container-type: inline-size; }
+  .p24-page, .p24-page * { font-family: "Sassoon Primary", "Comic Sans MS", cursive; }
   .p24-heading { position: absolute; left: 6.7%; top: .3%; margin: 0; color: #0068a5; font-size: 3.15cqw; line-height: 1.2; font-weight: 500; font-style: italic; }
   .p24-activity { position: absolute; left: 6.6%; top: 4.7%; margin: 0; color: #e51f2b; font-size: 3.65cqw; line-height: 1.1; font-weight: 700; font-style: italic; }
   .p24-instruction { position: absolute; left: 7.2%; top: 9.5%; margin: 0; font-size: 3.05cqw; line-height: 1.2; font-style: italic; }
@@ -32,14 +34,14 @@
   .p24-yusuf { left: 13.5%; top: 57.1%; width: 29.4%; }
   .p24-yusuf::before { right: 14%; bottom: -3.25cqw; transform: rotate(-10deg); } .p24-yusuf::after { right: 14.2%; bottom: -2.95cqw; transform: rotate(-10deg); }
   .p24-joyce { left: 51.8%; top: 57.5%; width: 34.8%; }
-  .p24-joyce::before { right: 24%; bottom: -3.2cqw; transform: rotate(67deg); } .p24-joyce::after { right: 24.2%; bottom: -2.9cqw; transform: rotate(67deg); }
+  .p24-joyce::before { right: 14%; bottom: -3.45cqw; width: 10.5cqw; height: 3.6cqw; border: 0; background: #ed1c24; clip-path: polygon(100% 0, 0 100%, 74% 0); transform: none; }
+  .p24-joyce::after { right: 14.25%; bottom: -3.1cqw; width: 9.75cqw; height: 3.15cqw; border: 0; background: #fff; clip-path: polygon(100% 0, 0 100%, 74% 0); transform: none; }
   .p24-figure { position: absolute; z-index: 1; margin: 0; }
   .p24-figure img { display: block; width: 100%; height: 100%; object-fit: contain; }
   .p24-fig-natalia { left: 6.8%; top: 25.4%; width: 36%; height: 30%; }
   .p24-fig-baraka { left: 59.5%; top: 27.3%; width: 30%; height: 29%; }
   .p24-fig-yusuf { left: 6.7%; top: 68.2%; width: 36%; height: 30%; }
   .p24-fig-joyce { left: 59.2%; top: 66.8%; width: 31%; height: 31.5%; }
-  .p24-watermark { position: absolute; z-index: 2; left: -2%; top: 49%; width: 91%; transform: rotate(-48deg); color: rgba(255, 87, 82, .34); font: 700 5.7cqw/1 Arial, sans-serif; letter-spacing: .12cqw; text-align: center; white-space: nowrap; pointer-events: none; }
 </style>
 <section class="p24-page" aria-labelledby="pg024_n0002">
   <h1 class="p24-heading" id="pg024_n0002" data-id="pg024_n0002">I introduce others.</h1>
@@ -58,7 +60,6 @@
   <p class="p24-bubble p24-joyce"><span data-id="pg024_n0018">This is Joyce.</span><span data-id="pg024_n0019">She is in Standard One.</span></p>
   <figure class="p24-figure p24-fig-joyce"><img src="images/pg024_im004.jpg" data-id="pg024_im004" alt="Three pupils stand together while one pupil introduces Joyce."></figure>
 
-  <div class="p24-watermark" aria-hidden="true">FOR ONLINE READING ONLY</div>
 </section>
       </div>
     </main>
