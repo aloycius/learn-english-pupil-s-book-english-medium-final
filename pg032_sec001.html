@@ -10,7 +10,6 @@
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
-<link rel="stylesheet" href="./assets/sign-language-video.css">
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
@@ -27,7 +26,8 @@
 .scene{position:absolute;left:11.91%;top:27.40%;width:77.29%;height:57.32%;z-index:1;display:block;object-fit:fill}
 .tails{position:absolute;inset:0;z-index:2;width:100%;height:100%;pointer-events:none}
 .tails polygon{fill:#fff;stroke:#ed1c24;stroke-width:1.15;stroke-linejoin:round}
-.speech{position:absolute;z-index:3;margin:0;padding:.48cqw .78cqw;border:.12cqw solid #ed1c24;border-radius:1.75cqw;overflow:hidden;background:#fff;color:#231f20;font:400 3.0cqw/3.5cqw "Sassoon Primary",sans-serif;white-space:nowrap}
+.speech{position:absolute;z-index:3;margin:0;padding:.48cqw .78cqw;border:.12cqw solid #ed1c24;border-radius:1.75cqw;overflow:hidden;background:#fff;color:#231f20;font:400 3.0cqw/3.5cqw "Sassoon Primary",sans-serif;white-space:normal;overflow-wrap:break-word;hyphens:none}
+.speech span{max-width:100%}
 .s1{left:14.24%;top:21.81%;width:28.0%;height:6.2%}
 .s2{left:44.67%;top:55.63%;width:28.0%;height:6.2%}
 .s3{left:11.09%;top:67.09%;width:28.0%;height:6.2%}
@@ -65,11 +65,9 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js?v=419553befff18c74"></script>
+    <script src="./assets/offline-preloader.js?v=5ebaf7f9ddd19843"></script>
     <script src="./assets/scorm.js"></script>
-    <script src="./assets/media-playback-independence.js"></script>
-<script src="./assets/base.bundle.local.js?v=h2m-1"></script>
-<script src="./assets/sign-language-video.js"></script>
+    <script src="./assets/base.bundle.local.js"></script>
 </body>
 
 </html>
