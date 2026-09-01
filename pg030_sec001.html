@@ -17,8 +17,56 @@
     <main class="w-full">
       <div id="content" class="opacity-0">
         <style>
-@font-face{font-family:Sassoon;src:url("assets/fonts/SassoonPrimary.ttf")} .p30{position:relative;width:100%;aspect-ratio:1082/1350;background:#fff;overflow:hidden;container-type:inline-size;color:#222}.p30,.p30 *{font-family:Sassoon,sans-serif}.p30 h1{position:absolute;left:12%;top:3%;margin:0;font-size:3.2cqw;font-weight:400;font-style:italic}.p30 .scene{position:absolute;object-fit:fill}.p30 .s1{left:26.4%;top:14%;width:47%;height:42%}.p30 .s2{left:25.3%;top:61%;width:50%;height:35%}.p30 .b{position:absolute;z-index:3;margin:0;padding:.55cqw .8cqw;border:.12cqw solid #ed1c24;border-radius:1.7cqw;background:#fff;font-size:2.8cqw;line-height:1.35;font-style:italic}.p30 .b:after{content:"";position:absolute;background:#fff;border-left:.12cqw solid #ed1c24;border-bottom:.12cqw solid #ed1c24;width:5cqw;height:2.3cqw;clip-path:polygon(0 0,100% 100%,20% 0)}.p30 .a{left:12%;top:7%;width:38%}.p30 .a:after{right:18%;bottom:-2.3cqw;transform:rotate(70deg)}.p30 .b2{left:59%;top:10.5%;width:30%}.p30 .b2:after{left:28%;bottom:-2.3cqw;transform:rotate(112deg)}.p30 .c{left:12%;top:34%;width:21%}.p30 .c:after{right:-4cqw;top:.8cqw;transform:scaleX(-1) rotate(-10deg)}.p30 .d{left:12%;top:56.5%;width:27%}.p30 .d:after{right:6%;bottom:-2.2cqw;transform:rotate(35deg)}.p30 .e{left:59%;top:58.5%;width:30%}.p30 .e:after{left:-3.7cqw;top:1.2cqw;transform:scaleX(-1) rotate(3deg)}.p30 .f{left:20%;top:88.5%;width:32%}.p30 .f:after{right:5%;top:-2cqw;transform:rotate(205deg)}
-</style><section class="p30" aria-labelledby="pg030_n0002"><h1 id="pg030_n0002" data-id="pg030_n0002">3. &#xa0; Practise greeting your friends.</h1><img class="scene s1" src="images/pg030_im001.jpg" data-id="pg030_im001" alt="Two schoolchildren shake hands in the morning."><img class="scene s2" src="images/pg030_im002.jpg" data-id="pg030_im002" alt="Two schoolchildren shake hands in the evening."><p class="b a" data-id="pg030_n0004">Hello Rehema! Great to see<br>you again. How are you?</p><p class="b b2" data-id="pg030_n0005">I am okay, thanks.<br>How are you doing,<br>Joshua?</p><p class="b c" data-id="pg030_n0006">I am doing<br>great, thanks.</p><p class="b d" data-id="pg030_n0008">Good evening, Ali.</p><p class="b e" data-id="pg030_n0009">Good evening, Edith.<br>How is your day?</p><p class="b f" data-id="pg030_n0010">It is great. Thank you<br>for asking.</p></section>
+@font-face{font-family:"Sassoon Primary";src:url("assets/fonts/SassoonPrimary.ttf") format("truetype");font-weight:400;font-style:normal;font-display:block}
+.page30{position:relative;width:100%;aspect-ratio:535/750;overflow:hidden;background:#fff;color:#231f20;container-type:inline-size;font-family:"Sassoon Primary",sans-serif;font-synthesis:none;font-kerning:normal}
+.page30 *{box-sizing:border-box}
+.page30-title{position:absolute;left:11.87%;top:7.65%;z-index:4;margin:0;font:400 3.36cqw/1 "Sassoon Primary",sans-serif;white-space:nowrap}
+.scene{position:absolute;z-index:1;display:block;object-fit:fill}
+.morning{left:26.47%;top:15.56%;width:47.26%;height:37.61%}
+.evening{left:25.50%;top:58.22%;width:49.65%;height:31.51%}
+.tails{position:absolute;inset:0;z-index:2;width:100%;height:100%;pointer-events:none}
+.tails polygon{fill:#fff;stroke:#ed1c24;stroke-width:.9;stroke-linejoin:round}
+.speech{position:absolute;z-index:3;margin:0;padding:.52cqw .82cqw .58cqw;border:.12cqw solid #ed1c24;border-radius:1.75cqw;background:#fff;color:#231f20;font:400 3.16cqw/3.68cqw "Sassoon Primary",sans-serif;white-space:nowrap}
+.s1{left:11.36%;top:11.51%;width:38.7%}
+.s2{left:58.87%;top:14.72%;width:30.9%}
+.s3{left:11.36%;top:34.91%;width:27.7%}
+.s4{left:11.36%;top:53.27%;width:27.4%}
+.s5{left:55.11%;top:55.56%;width:34.7%}
+.s6{left:19.48%;top:83.95%;width:35.1%}
+</style>
+<section class="page30" aria-labelledby="pg030_n0002">
+  <h1 class="page30-title" id="pg030_n0002" data-id="pg030_n0002">3. Practise greeting your friends.</h1>
+
+  <img class="scene morning" src="images/pg030_im001.jpg" data-id="pg030_im001" alt="Joshua and Rehema greet each other in the morning.">
+  <img class="scene evening" src="images/pg030_im002.jpg" data-id="pg030_im002" alt="Edith and Ali greet each other in the evening.">
+
+  <svg class="tails" viewBox="0 0 535 750" preserveAspectRatio="none" aria-hidden="true">
+    <!-- Joshua greets Rehema. -->
+    <polygon points="245,129 258,129 226,202"/>
+    <!-- Rehema replies to Joshua. -->
+    <polygon points="416,173 429,173 320,207"/>
+    <!-- Joshua answers. -->
+    <polygon points="193,264 206,264 220,244"/>
+    <!-- Edith greets Ali. -->
+    <polygon points="143,423 156,423 194,484"/>
+    <!-- Ali replies to Edith. -->
+    <polygon points="300,460 313,460 275,488"/>
+    <!-- Edith answers. -->
+    <polygon points="278,632 291,632 190,520"/>
+  </svg>
+
+  <p class="speech s1" data-id="pg030_n0004">Hello Rehema! Great to see<br>you again. How are you?</p>
+
+  <p class="speech s2" data-id="pg030_n0005">I am okay, thanks.<br>How are you doing,<br>Joshua?</p>
+
+  <p class="speech s3" data-id="pg030_n0006">I am doing<br>great, thanks.</p>
+
+  <p class="speech s4" data-id="pg030_n0008">Good evening, Ali.</p>
+
+  <p class="speech s5" data-id="pg030_n0009">Good evening, Edith.<br>How is your day?</p>
+
+  <p class="speech s6" data-id="pg030_n0010">It is great. Thank you<br>for asking.</p>
+</section>
       </div>
     </main>
 

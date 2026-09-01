@@ -17,8 +17,56 @@
     <main class="w-full">
       <div id="content" class="opacity-0">
         <style>
-@font-face{font-family:Sassoon;src:url("assets/fonts/SassoonPrimary.ttf")} .p31{position:relative;width:100%;aspect-ratio:1082/1350;background:#fff;overflow:hidden;container-type:inline-size;color:#222}.p31,.p31 *{font-family:Sassoon,sans-serif}.p31 h1{position:absolute;left:12%;top:3%;margin:0;font-size:3.2cqw;font-weight:400;font-style:italic}.p31 .scene{position:absolute;object-fit:fill}.p31 .s1{left:27%;top:11%;width:47%;height:39%}.p31 .s2{left:26.5%;top:54%;width:50%;height:41%}.p31 .b{position:absolute;z-index:3;margin:0;padding:.55cqw .8cqw;border:.12cqw solid #ed1c24;border-radius:1.7cqw;background:#fff;font-size:2.8cqw;line-height:1.35;font-style:italic}.p31 .b:after{content:"";position:absolute;background:#fff;border-left:.12cqw solid #ed1c24;border-bottom:.12cqw solid #ed1c24;width:5cqw;height:2.4cqw;clip-path:polygon(0 0,100% 100%,20% 0)}.p31 .a{left:12%;top:10.5%;width:22%}.p31 .a:after{right:-2.8cqw;bottom:-2cqw;transform:rotate(40deg)}.p31 .b2{left:58%;top:12.5%;width:31%}.p31 .b2:after{left:14%;bottom:-2.2cqw;transform:rotate(115deg)}.p31 .c{left:12%;top:33%;width:17%}.p31 .c:after{right:-4.5cqw;top:.7cqw;transform:scaleX(-1)}.p31 .d{left:12%;top:52%;width:25%}.p31 .d:after{right:-2cqw;bottom:-2.1cqw;transform:rotate(48deg)}.p31 .e{left:64%;top:54%;width:25%}.p31 .e:after{left:-4cqw;bottom:-.8cqw;transform:scaleX(-1) rotate(25deg)}.p31 .f{left:12%;top:75%;width:25%}.p31 .f:after{right:-3.5cqw;top:-.5cqw;transform:scaleX(-1) rotate(-16deg)}
-</style><section class="p31" aria-labelledby="pg031_n0002"><h1 id="pg031_n0002" data-id="pg031_n0002">4. &#xa0; Practise greeting your parents.</h1><img class="scene s1" src="images/pg031_im001.jpg" data-id="pg031_im001" alt="John greets his mother in the morning."><img class="scene s2" src="images/pg031_im002.jpg" data-id="pg031_im002" alt="Ashura greets her father in the afternoon."><p class="b a" data-id="pg031_n0004">Good morning,<br>mother.</p><p class="b b2" data-id="pg031_n0005">Good morning, John.<br>How are you?</p><p class="b c" data-id="pg031_n0006">I am fine,<br>thank you.</p><p class="b d" data-id="pg031_n0008">Good afternoon,<br>father.</p><p class="b e" data-id="pg031_n0009">Good afternoon,<br>Ashura. How are<br>you doing?</p><p class="b f" data-id="pg031_n0010">I am doing well,<br>thank you.</p><div class="wm" aria-hidden="true">FOR ONLINE READING ONLY</div></section>
+@font-face{font-family:"Sassoon Primary";src:url("assets/fonts/SassoonPrimary.ttf") format("truetype");font-weight:400;font-style:normal;font-display:block}
+.page31{position:relative;width:100%;aspect-ratio:535/750;overflow:hidden;background:#fff;color:#231f20;container-type:inline-size;font-family:"Sassoon Primary",sans-serif;font-synthesis:none;font-kerning:normal}
+.page31 *{box-sizing:border-box}
+.page31-title{position:absolute;left:11.87%;top:7.65%;z-index:4;margin:0;font:400 3.36cqw/1 "Sassoon Primary",sans-serif;white-space:nowrap}
+.scene{position:absolute;z-index:1;display:block;object-fit:fill}
+.morning{left:27.45%;top:12.54%;width:46.20%;height:36.08%}
+.afternoon{left:26.83%;top:52.21%;width:49.06%;height:37.74%}
+.tails{position:absolute;inset:0;z-index:2;width:100%;height:100%;pointer-events:none}
+.tails polygon{fill:#fff;stroke:#ed1c24;stroke-width:1.15;stroke-linejoin:round}
+.speech{position:absolute;z-index:3;margin:0;padding:.48cqw .78cqw;border:.12cqw solid #ed1c24;border-radius:1.75cqw;overflow:hidden;background:#fff;color:#231f20;font:400 3.0cqw/3.5cqw "Sassoon Primary",sans-serif;white-space:nowrap}
+.s1{left:11.36%;top:12.03%;width:25.0%;height:6.2%}
+.s2{left:57.0%;top:14.28%;width:33.0%;height:6.2%}
+.s3{left:11.52%;top:32.43%;width:25.0%;height:6.2%}
+.s4{left:11.23%;top:50.66%;width:28.5%;height:6.2%}
+.s5{left:60.0%;top:52.91%;width:30.0%;height:8.8%}
+.s6{left:11.36%;top:72.62%;width:29.0%;height:6.2%}
+</style>
+<section class="page31" aria-labelledby="pg031_n0002">
+  <h1 class="page31-title" id="pg031_n0002" data-id="pg031_n0002">4. Practise greeting your parents.</h1>
+
+  <img class="scene morning" src="images/pg031_im001.jpg" data-id="pg031_im001" alt="John greets his mother in the morning.">
+  <img class="scene afternoon" src="images/pg031_im002.jpg" data-id="pg031_im002" alt="Ashura greets her father in the afternoon.">
+
+  <svg class="tails" viewBox="0 0 535 750" preserveAspectRatio="none" aria-hidden="true">
+    <!-- John greets his mother. -->
+    <polygon points="145,135 158,135 224,228"/>
+    <!-- John's mother replies. -->
+    <polygon points="398,152 411,152 302,224"/>
+    <!-- John answers. -->
+    <polygon points="176,245 189,245 216,270"/>
+    <!-- Ashura greets her father. -->
+    <polygon points="143,425 156,425 215,490"/>
+    <!-- Ashura's father replies. -->
+    <polygon points="328,461 341,461 287,447"/>
+    <!-- Ashura answers. -->
+    <polygon points="144,546 157,546 210,520"/>
+  </svg>
+
+  <p class="speech s1" data-id="pg031_n0004">Good morning,<br>mother.</p>
+
+  <p class="speech s2" data-id="pg031_n0005">Good morning, John.<br>How are you?</p>
+
+  <p class="speech s3" data-id="pg031_n0006">I am fine,<br>thank you.</p>
+
+  <p class="speech s4" data-id="pg031_n0008">Good afternoon,<br>father.</p>
+
+  <p class="speech s5" data-id="pg031_n0009">Good afternoon,<br>Ashura. How are<br>you doing?</p>
+
+  <p class="speech s6" data-id="pg031_n0010">I am doing well,<br>thank you.</p>
+</section>
       </div>
     </main>
 

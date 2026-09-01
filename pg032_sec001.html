@@ -17,8 +17,49 @@
     <main class="w-full">
       <div id="content" class="opacity-0">
         <style>
-@font-face{font-family:Sassoon;src:url("assets/fonts/SassoonPrimary.ttf")} .p32{position:relative;width:100%;aspect-ratio:1082/1350;background:#fff;overflow:hidden;container-type:inline-size;color:#222}.p32,.p32 *{font-family:Sassoon,sans-serif}.p32 h1{position:absolute;left:12%;top:2%;margin:0;color:#0673b9;font-size:3.15cqw;font-weight:400;font-style:italic}.p32 h2{position:absolute;left:12%;top:7%;margin:0;color:#e51f2b;font-size:3.5cqw;font-weight:700;font-style:italic}.p32 .inst{position:absolute;left:12%;top:12%;margin:0;font-size:3cqw;font-style:italic}.p32 .scene{position:absolute;left:12%;top:22%;width:77%;height:65%;object-fit:fill}.p32 .b{position:absolute;z-index:3;margin:0;padding:.55cqw .8cqw;border:.12cqw solid #ed1c24;border-radius:1.7cqw;background:#fff;font-size:2.9cqw;line-height:1.35;font-style:italic}.p32 .b:after{content:"";position:absolute;background:#fff;border-left:.12cqw solid #ed1c24;border-bottom:.12cqw solid #ed1c24;width:5cqw;height:2.3cqw;clip-path:polygon(0 0,100% 100%,20% 0)}.p32 .a{left:15%;top:18%;width:28%}.p32 .a:after{left:58%;bottom:-2.2cqw;transform:rotate(70deg)}.p32 .b2{left:45%;top:57%;width:27%}.p32 .b2:after{right:6%;top:-2cqw;transform:rotate(205deg)}.p32 .c{left:12%;top:69%;width:26%}.p32 .c:after{left:45%;top:-2cqw;transform:rotate(206deg)}
-</style><section class="p32" aria-labelledby="pg032_n0002"><h1 id="pg032_n0002" data-id="pg032_n0002">I say goodbye to others.</h1><h2 data-id="pg032_n0004">Activity 1</h2><p class="inst" data-id="pg032_n0005">1. &#xa0; Practise saying goodbye to your friend.</p><img class="scene" src="images/pg032_im001.jpg" data-id="pg032_im001" alt="Mariam and Baraka wave goodbye to each other."><p class="b a"><span data-id="pg032_n0007">Bye Baraka.</span><br><span data-id="pg032_n0008">See you tomorrow.</span></p><p class="b b2"><span data-id="pg032_n0009">See you, Mariam.</span><br><span data-id="pg032_n0010">Take care.</span></p><p class="b c" data-id="pg032_n0011">You take care as<br>well.</p><div class="wm" aria-hidden="true">FOR ONLINE READING ONLY</div></section>
+@font-face{font-family:"Sassoon Primary";src:url("assets/fonts/SassoonPrimary.ttf") format("truetype");font-weight:400;font-style:normal;font-display:block}
+.page32{position:relative;width:100%;aspect-ratio:535/750;overflow:hidden;background:#fff;color:#231f20;container-type:inline-size;font-family:"Sassoon Primary",sans-serif;font-synthesis:none;font-kerning:normal}
+.page32 *{box-sizing:border-box}
+.heading{position:absolute;z-index:4;margin:0;white-space:nowrap;font-family:"Sassoon Primary",sans-serif;font-weight:400}
+.unit{left:11.87%;top:7.65%;color:#006fba;font-size:3.36cqw;line-height:1}
+.activity{left:11.87%;top:12.35%;color:#ed1c24;font-size:3.74cqw;line-height:1;font-weight:700}
+.instruction{left:11.87%;top:16.52%;font-size:3.36cqw;line-height:1}
+.scene{position:absolute;left:11.91%;top:27.40%;width:77.29%;height:57.32%;z-index:1;display:block;object-fit:fill}
+.tails{position:absolute;inset:0;z-index:2;width:100%;height:100%;pointer-events:none}
+.tails polygon{fill:#fff;stroke:#ed1c24;stroke-width:1.15;stroke-linejoin:round}
+.speech{position:absolute;z-index:3;margin:0;padding:.48cqw .78cqw;border:.12cqw solid #ed1c24;border-radius:1.75cqw;overflow:hidden;background:#fff;color:#231f20;font:400 3.0cqw/3.5cqw "Sassoon Primary",sans-serif;white-space:nowrap}
+.s1{left:14.24%;top:21.81%;width:28.0%;height:6.2%}
+.s2{left:44.67%;top:55.63%;width:28.0%;height:6.2%}
+.s3{left:11.09%;top:67.09%;width:28.0%;height:6.2%}
+</style>
+<section class="page32" aria-labelledby="pg032_n0002">
+  <h1 class="heading unit" id="pg032_n0002" data-id="pg032_n0002">I say goodbye to others.</h1>
+  <h2 class="heading activity" data-id="pg032_n0004">Activity 1</h2>
+  <p class="heading instruction" data-id="pg032_n0005">1. Practise saying goodbye to your friend.</p>
+
+  <img class="scene" src="images/pg032_im001.jpg" data-id="pg032_im001" alt="Mariam and Baraka wave goodbye.">
+
+  <svg class="tails" viewBox="0 0 535 750" preserveAspectRatio="none" aria-hidden="true">
+    <!-- Mariam says goodbye to Baraka. -->
+    <polygon points="169,208 182,208 199,297"/>
+    <!-- Baraka replies to Mariam. -->
+    <polygon points="365,419 378,419 406,280"/>
+    <!-- Mariam answers. -->
+    <polygon points="133,505 146,505 181,358"/>
+  </svg>
+
+  <p class="speech s1">
+    <span data-id="pg032_n0007">Bye Baraka.</span><br>
+    <span data-id="pg032_n0008">See you tomorrow.</span>
+  </p>
+
+  <p class="speech s2">
+    <span data-id="pg032_n0009">See you, Mariam.</span><br>
+    <span data-id="pg032_n0010">Take care.</span>
+  </p>
+
+  <p class="speech s3" data-id="pg032_n0011">You take care as<br>well.</p>
+</section>
       </div>
     </main>
 

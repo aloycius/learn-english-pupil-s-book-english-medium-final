@@ -17,47 +17,43 @@
     <main class="w-full">
       <div id="content" class="opacity-0">
         <style>
-@font-face{font-family:Sassoon;src:url("assets/fonts/SassoonPrimary.ttf")} .p35{position:relative;width:100%;aspect-ratio:1082/1350;background:#fff;overflow:hidden;container-type:inline-size;color:#222}.p35,.p35 *{font-family:Sassoon,sans-serif}.p35 h1{position:absolute;left:12%;top:3%;margin:0;font-size:3.2cqw;font-weight:400;font-style:italic}.letters{position:absolute;left:12%;top:10%;width:77%;height:27%;border:.16cqw solid #ed1c24;border-radius:1.6cqw;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(3,1fr);align-items:center;text-align:center;padding:1cqw 2cqw;font-size:5.3cqw;font-style:italic}.blank{color:#df2635}.a{color:#d92734}.c{color:#39a84a}.d{color:#26469b}.f{color:#bd45a0}.h{color:#067596}.j{color:#0a8cad}.k{color:#8bab31}.m{color:#a78dc0}.o{color:#e32834}.q{color:#222}.s{color:#075f48}.u{color:#25469e}.w{color:#222}.x{color:#dd2737}.z{color:#26469b}.p35 .people{position:absolute;left:24%;top:52%;width:52%;height:40%;object-fit:contain}.p35 .b{position:absolute;z-index:3;margin:0;padding:.55cqw .8cqw;border:.12cqw solid #ed1c24;border-radius:1.7cqw;background:#fff;font-size:2.8cqw;line-height:1.35;font-style:italic}.p35 .b:after{content:"";position:absolute;background:#fff;border-left:.12cqw solid #ed1c24;border-bottom:.12cqw solid #ed1c24;width:5cqw;height:2.3cqw;clip-path:polygon(0 0,100% 100%,20% 0)}.p35 .b1{left:14%;top:40%;width:19%}.p35 .b1:after{right:10%;bottom:-2.2cqw;transform:rotate(60deg)}.p35 .b2{left:64%;top:43%;width:25%}.p35 .b2:after{left:-3.8cqw;bottom:-.3cqw;transform:scaleX(-1) rotate(22deg)}
+@font-face{font-family:"Sassoon Primary";src:url("assets/fonts/SassoonPrimary.ttf") format("truetype");font-weight:400;font-style:normal;font-display:block}
+.page35{position:relative;width:100%;aspect-ratio:535/750;overflow:hidden;background:#fff;color:#231f20;container-type:inline-size;font-family:"Sassoon Primary",sans-serif;font-synthesis:none;font-kerning:normal}
+.page35 *{box-sizing:border-box}
+.instruction{position:absolute;left:11.87%;top:7.65%;z-index:4;margin:0;font:400 3.22cqw/1 "Sassoon Primary",sans-serif;white-space:nowrap}
+.alphabet{position:absolute;left:11.92%;top:12.70%;width:77.54%;height:23.56%;z-index:2;display:grid;grid-template-columns:repeat(9,1fr);grid-template-rows:repeat(3,1fr);align-items:center;justify-items:center;padding:1.0cqw 1.5cqw;border:.12cqw solid #ed1c24;border-radius:1.2cqw;background:#fff;font:400 5.35cqw/1 "Sassoon Primary",sans-serif}
+.blank{color:#d2232a;font-family:Arial,sans-serif;font-weight:700;transform:translateY(-.15em)}
+.a,.o{color:#d2232a}.c{color:#40ad49}.d{color:#24408f}.f{color:#b04a9c}.h{color:#056a8f}.j{color:#008cab}.k{color:#8bab31}.m{color:#a78dc0}.q{color:#231f20}.s{color:#075f48}.u{color:#25469e}.w{color:#231f20}.x{color:#dd2737}.z{color:#26469b}
+.scene{position:absolute;left:23.18%;top:48.98%;width:49.97%;height:38.65%;z-index:1;display:block;object-fit:fill}
+.tails{position:absolute;inset:0;z-index:2;width:100%;height:100%;pointer-events:none}
+.tails polygon{fill:#fff;stroke:#ed1c24;stroke-width:1.15;stroke-linejoin:round}
+.speech{position:absolute;z-index:3;margin:0;padding:.48cqw .78cqw;border:.12cqw solid #ed1c24;border-radius:1.75cqw;overflow:hidden;background:#fff;color:#231f20;font:400 3.0cqw/3.5cqw "Sassoon Primary",sans-serif;white-space:nowrap}
+.s1{left:13.69%;top:38.85%;width:22.0%;height:8.8%}
+.s2{left:59.0%;top:42.33%;width:31.0%;height:8.8%}
 </style>
-<section class="p35" aria-labelledby="pg035_n0003">
-<h1>
-<span data-id="pg035_n0002">2.</span> &#xa0; <span id="pg035_n0003" data-id="pg035_n0003">Name the missing letters orally.</span>
-</h1>
-<div class="letters" role="group" aria-label="Alphabet with missing letters">
-<span class="a">a</span>
-<span class="blank">_</span>
-<span class="c">c</span>
-<span class="d">d</span>
-<span class="blank">_</span>
-<span class="f">f</span>
-<span class="blank">_</span>
-<span class="h">h</span>
-<span class="blank">_</span>
-<span class="j">j</span>
-<span class="k">k</span>
-<span class="blank">_</span>
-<span class="m">m</span>
-<span class="blank">_</span>
-<span class="o">o</span>
-<span class="blank">_</span>
-<span class="q">q</span>
-<span class="blank">_</span>
-<span class="s">s</span>
-<span class="blank">_</span>
-<span class="u">u</span>
-<span class="blank">_</span>
-<span class="w">w</span>
-<span class="x">x</span>
-<span class="blank">_</span>
-<span class="z">z</span>
-</div>
-<span class="sr-only" data-id="pg035_n0005">a [[blank:item-1]] c d [[blank:item-2]] f [[blank:item-3]] h [[blank:item-4]]</span>
-<span class="sr-only" data-id="pg035_n0006">j k [[blank:item-5]] m [[blank:item-6]] o [[blank:item-7]] q [[blank:item-8]]</span>
-<span class="sr-only" data-id="pg035_n0007">s [[blank:item-9]] u [[blank:item-10]] w x [[blank:item-11]] z</span>
-<img class="people" src="images/pg035_im001.jpg" data-id="pg035_im001" alt="Two pupils wearing backpacks practise saying letter sounds together.">
-<p class="b b1" data-id="pg035_n0009">Now, I know<br>the English<br>letters.</p>
-<p class="b b2" data-id="pg035_n0010">Let us pronounce<br>the letter sounds<br>together.</p>
-<div class="wm" aria-hidden="true">FOR ONLINE READING ONLY</div>
+<section class="page35" aria-labelledby="pg035_n0003">
+  <h1 class="instruction"><span data-id="pg035_n0002">2.</span> <span id="pg035_n0003" data-id="pg035_n0003">Name the missing letters orally.</span></h1>
+
+  <div class="alphabet" aria-hidden="true">
+    <span class="a">a</span><span class="blank">_</span><span class="c">c</span><span class="d">d</span><span class="blank">_</span><span class="f">f</span><span class="blank">_</span><span class="h">h</span><span class="blank">_</span>
+    <span class="j">j</span><span class="k">k</span><span class="blank">_</span><span class="m">m</span><span class="blank">_</span><span class="o">o</span><span class="blank">_</span><span class="q">q</span><span class="blank">_</span>
+    <span class="s">s</span><span class="blank">_</span><span class="u">u</span><span class="blank">_</span><span class="w">w</span><span class="x">x</span><span class="blank">_</span><span class="z">z</span><span></span>
+  </div>
+  <span class="sr-only" data-id="pg035_n0005">a blank c d blank f blank h blank</span>
+  <span class="sr-only" data-id="pg035_n0006">j k blank m blank o blank q blank</span>
+  <span class="sr-only" data-id="pg035_n0007">s blank u blank w x blank z</span>
+
+  <img class="scene" src="images/pg035_im001.jpg" data-id="pg035_im001" alt="Two pupils practise letter sounds.">
+
+  <svg class="tails" viewBox="0 0 535 750" preserveAspectRatio="none" aria-hidden="true">
+    <!-- The girl speaks. -->
+    <polygon points="161,356 174,356 196,410"/>
+    <!-- The boy replies. -->
+    <polygon points="335,382 348,382 301,410"/>
+  </svg>
+
+  <p class="speech s1" data-id="pg035_n0009">Now, I know<br>the English<br>letters.</p>
+  <p class="speech s2" data-id="pg035_n0010">Let us pronounce<br>the letter sounds<br>together.</p>
 </section>
       </div>
     </main>
