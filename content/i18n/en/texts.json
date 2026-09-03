@@ -6278,5 +6278,11 @@
   "pg096_n0033_easy_read": "The other 2 rats ran away.",
   "pg096_n0034_easy_read": "Kido killed my enemies.",
   "pg096_n0035_easy_read": "So I was happy.",
-  "pg008_im001_concise": "a frog"
+  "pg008_im001_concise": "a frog",
+  "pg008_im001_concise_v4": "frog",
+  "pg008_im002_concise_v4": "cat",
+  "pg008_im003_concise_v4": "sheep",
+  "pg008_im004_concise_v4": "goat",
+  "pg008_im005_concise_v4": "cow",
+  "pg008_im006_concise_v4": "dog"
 }
