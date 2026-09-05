@@ -26498,7 +26498,7 @@ function useAtomValueWithDelay<Value>(
   // src/shared/state/ui.atoms.ts
   var easyReadModeAtom = persistedBoolAtom("easyReadMode", false);
   var eli5ModeAtom = persistedBoolAtom("eli5Mode", false);
-  var signLanguageModeAtom = persistedBoolAtom("signLanguageMode", false);
+  var signLanguageModeAtom = persistedBoolAtom("signLanguageModeV2", true);
   var glossaryModeAtom = persistedBoolAtom("glossaryMode", false);
   var syllablesModeAtom = persistedBoolAtom("syllablesMode", false);
   var stateModeAtom = persistedBoolAtom("stateMode", false);
