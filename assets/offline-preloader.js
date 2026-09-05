@@ -18,7 +18,9 @@
   window.fetch = function (url, opts) {
     var raw = (url && typeof url === "object" && typeof url.url === "string") ? url.url : url;
     var key = lookup(raw);
-    if (key !== null) {
+    // Embedded resources are an offline-only fallback. On HTTP(S), use the
+    // current files from the server (including the sign-language manifest).
+    if (location.protocol === 'file:' && key !== null) {
       var data = INLINE[key];
       var isJson = key.slice(-5) === ".json";
       var body = isJson ? JSON.stringify(data) : data;
