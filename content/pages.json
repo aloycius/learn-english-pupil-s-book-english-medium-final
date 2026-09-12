@@ -5,6 +5,11 @@
     "cover_type": "front"
   },
   {
+    "section_id": "pg001_sec001",
+    "href": "pg001_sec001.html",
+    "page_number": 1
+  },
+  {
     "section_id": "pg002_sec001",
     "href": "pg002_sec001.html",
     "page_number": 2
